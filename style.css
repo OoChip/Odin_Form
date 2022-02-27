@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "matrix";
+    src: url('./assets/Matrix.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:"matrix", sans-serif;
+    letter-spacing: 0.1rem;
+    background: black;
+    color:antiquewhite;
+}
+
+audio {
+    width: 43vw;
+    height: 30px;
+    color: white;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 10px;
+    background-color:darkgray;
+    color: #cccccc;
+}
+
+.container{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 45vw;
+    gap: 0.5rem;
+    --ok: green;
+    --error: red;
+}
+
+.form [required]:valid{
+    border: thin solid var(--ok);
+    background-color: black;
+    color: aliceblue;
+}
+
+.form [required]:invalid{
+    border: thin solid var(--error);
+    background-color: black;
+    color: aliceblue;
+}
+
+.form input {
+    text-transform: uppercase;
+    width: 25vw;
+    background-color: black;
+    color: aliceblue;
+}
+
+.img-container{
+    display: flex ;
+    align-items: flex-end ;
+    justify-content: center;
+    background-image: url("./assets/matrix.jpg");/* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100vh;
+    width: 40vw;
+}
+
+.logo {
+    width: 15vw;
+    margin: 4rem;
+    }
+
+.show {
+    display: block;
+    }
+
+.hide {
+    display: none;
+}
+ 
+
+

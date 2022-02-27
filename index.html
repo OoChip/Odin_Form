@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SING UP FORM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="img-container">
+            <img class="logo" src="./assets/matrix-logo.svg" alt="logo">
+        </div>
+        
+        <div class="form-container">
+            <h2>SING UP.</h2>
+
+        <br><br><br><br>
+
+            <form action="#" class="form">
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" name="firstname" id="firstname" placeholder="THOMAS" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Only letters and blanks">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lasname" id="lastname" placeholder="ANDERSON" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Only letters and blanks">
+                <label for="email">E-MAIL</label>
+                <input type="email" name="email" id="email" placeholder="NEO@NABUCODONOSOR.IO" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Only a valid e-mail">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="tel" id="tel" placeholder="1010011001" required pattern="^[0-9]*$" title="Only numbers. From 7 to 11 digits" minlength="7" maxlength="11"> 
+                <label for="pass">PASSWORD</label>
+                <input type="password" name="pass1" id="pass1" required>
+                <label for="confirm-pass">CONFIRM PASSWORD</label>
+                <input type="password"  id="pass2" required>
+                <p id="error" class="hide">Password mismatch</p>
+                <br><br>
+                <button type="button" id="singup">CREATE ACOUNT</button>
+        
+            </form>
+            
+            <br><br>
+
+            <audio src="./assets/Matrix-Intro.mp3" autoplay loop preload="auto" controls muted>Your browser does not support the audio element.</audio>
+
+        </div>
+    </div>
+
+>
+
+<script src="./app.js"></script>
+</body>
+</html>
